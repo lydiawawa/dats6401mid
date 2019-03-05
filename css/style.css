@@ -81,8 +81,8 @@ p{
 .top_header{
 	width:100%;
 	line-height: 1em;
-	margin-top: 19%;
-	margin-left: 30%;
+	margin-top: 0;
+	margin-left: 0;
 	margin-bottom: 2%;
     color: white;
 	font-weight:bold;
