@@ -2,6 +2,14 @@
   font-family: 'Roboto Slab', serif;
   font-weight: 300;
   transition: all .1s ease;
+
+     margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
   
 }
 
@@ -91,7 +99,7 @@ p{
 
 .nav{
     width: 100%;
-	background-image: url("../img/bg1.png");
+    background-image: url("../img/bg1.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: top left; 
@@ -103,9 +111,9 @@ p{
 	-webkit-box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.3);
     box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.3);
+    position:relative;
 	
-	
-	overflow-x: hidden;
+    margin-right:-22px;
 }
 
 .topBg {
