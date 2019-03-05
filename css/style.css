@@ -1,0 +1,242 @@
+* {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  transition: all .1s ease;
+  
+}
+
+body { 
+  background-image:url("../img/bg.png");
+  background-color: #EEEEEE;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom right; 
+  overflow-x: hidden;
+}
+
+
+
+html, body {
+  height: 100%;
+    margin: 0;
+	padding: 0;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+
+}
+
+.tab {
+    display: inline-block; 
+    margin-left: 10%; 
+    font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+  padding-left: 20%;
+  text-shadow: 0px 0px 9px rgba(255,255,255,0.8); 
+}
+
+h2 {
+  padding-top: 1em;
+  font-size: 35px;
+  flot: right;
+}
+
+table {
+  border-collapse: collapse;
+	padding: 0;
+	margin: 0;
+}
+
+.div{
+	position:relative;
+	 width: 80%;
+	height: 100%;
+    margin-bottom: 0px;
+	top:0;
+}
+
+.div p{
+	font-family: 'Raleway', sans-serif;
+	left: 20px;
+	padding-top: 10px;
+	line-height: 22px;
+	text-align: justify;
+	bottom: 0px;
+	margin: 0;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-indent: 30px;
+  padding:1em,0,1em,0;
+ 
+}
+
+.top_header{
+	width:100%;
+	line-height: 1em;
+	margin-top: 19%;
+	margin-left: 30%;
+	margin-bottom: 2%;
+    color: white;
+	font-weight:bold;
+	
+}
+
+.nav{
+    width: 100%;
+	background-image: url("../img/bg1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top left; 
+    background: rgb(34,193,195);
+    background: linear-gradient(119deg, rgba(34,193,195,1) 0%, rgba(6,25,93,0.9598214285714286) 100%);
+	opacity: 0.8;
+    height: 600px;
+	
+	-webkit-box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.3);
+    box-shadow: inset 0px -7px 9px 0px rgba(0,0,0,0.3);
+	
+	position:relative;
+	overflow: hidden;
+}
+
+.topBg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  float:left;
+  top: -1;
+  left: 0;
+  z-index: -1;
+ 
+}
+
+
+.page-section {
+  min-height: 90%;
+  width: 64%;
+  margin-left: 35%;
+  margin-bottom: 3%;
+  padding: 3em;
+  padding-top: 2em;
+  /*background-color: #eee;*/
+  color: #387295;
+  /*box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);*/
+}
+
+
+
+div:last-child {
+    margin-bottom:100px;
+
+}
+
+.navigation {
+	float: left;
+	width: 30%;
+    padding-top: 3em;
+	margin-left: 0%;
+	height: 100%;
+  	background-color: #999;
+  /*background-color: #1A5ED7;*/
+  background: linear-gradient(45deg, #43cea2 10%, #185a9d 90%);
+  
+  opacity: 0.8;
+  color: #fff;
+  box-shadow: 3px 0px 10px 0px rgba(0, 0, 0, 0.5)
+}
+.navigation__link {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  padding: 2.5em;
+  font-weight: 400;
+ text-align: right;
+}
+.navigation__link:hover {
+  background-color: #38B2BD;
+}
+.navigation__link.active {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+div.chartsG{
+   /*-webkit-box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.4);
+   -moz-box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.4);
+   box-shadow: 0px 0px 8px -2px rgba(0,0,0,0.4);
+   margin-bottom: 0px;*/
+}
+
+div.chartsG p{
+		font-family: 'Raleway', sans-serif;
+	left: 20px;
+	position: absolute;
+	top: 10px;
+	line-height: 22px;
+	text-align: justify;
+	
+}
+
+/*Back to top button styling*/
+#back2Top {
+    font-size: 20px;
+    overflow: hidden;
+    z-index: 999;
+    display: inline-block;
+    cursor: pointer;
+    position: fixed;
+    bottom: 50px;
+    right: 5%;
+    /*background-color: #DDD;*/
+    color: #306396;
+    text-align: center;
+    text-decoration: none;
+	line-height: 80px;
+	border-color:#306396 ;
+	transition:all .3s ease-out;
+}
+
+#back2Top:before{
+	content:'▲';
+	font-size:.9em;
+	position:absolute;
+	top:0;
+	left:50%;
+
+	margin-left:-.7em;
+	border:solid .13em #2D7491;
+	border-radius:10em;
+	width:1.4em;
+	height:1.4em;
+	line-height:1.3em;
+	border-color:inherit;
+	transition:transform .5s ease-in;
+}
+ #back2Top:hover {
+  
+    color: #105999;
+	border-color:#105999;
+
+} 
+
+#back2Top:hover:before{
+	transform: rotate(360deg);
+}
+
+/* top margin on sidebar needed for JS to parse */
+.content {  margin-top: 20px; }
+
+/* fixed sidebar applied dynamtically with JS */ 
+.fixed {  position: fixed; top: 0; }
+
+
+

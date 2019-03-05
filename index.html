@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Economic Structure of 14 Countries</title>
+	<!--Detect html5 and css3 features for all browsers-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> 
+    <link rel="stylesheet" href="css/style.css">  
+    <script type = "text/javascript"
+			src = "https://www.gstatic.com/charts/loader.js"></script>
+	 <script type = "text/javascript"
+			src = "js/googleCharts.js"></script>
+	
+	
+</head>
+
+<body>
+<!--Google font-->
+<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab" rel="stylesheet">
+	
+<div class ="nav">
+	
+	<div class="topBg">
+		<img src="img/bg3.png" />
+	</div>
+	<h1 class = "top_header">A Study of Top 14 GDP Countries'<br/>
+		<spam class="tab">Spending Patterns</spam>
+	</h1>
+	
+</div>
+	<!--sidebar menu-->
+<nav class="navigation" id="mainNav">
+
+			<a class="navigation__link" href="#1">Introduction</a>
+			<a class="navigation__link" href="#2">Education Spending</a>
+			<a class="navigation__link" href="#3">Healthcare Spending</a>
+				<a class="navigation__link" href="#4">Military Spending</a>
+
+				<a class="navigation__link" href="#5">Comparisons</a>
+				<a class="navigation__link" href="#6">Other Trends</a>
+				<a class="navigation__link" href="#7">Reference and Contact</a>
+</nav>
+
+	<!-- section starts-->
+<div class="page-section hero" id="1">
+	<h2>Introduction</h2>
+	<h3>Overview</h3>
+	<div class="div"><p>This is a study on the top 14 countries with the highest average GDP over the course of five years (2013-2017). We aim to reveal meaningful patterns by using data visualization, and to underline trends that will otherwisely be ignored. It is also a more effective way to convey the information behind complex data to lay audiences, thus exposing the questions on hand to a broader audience. </p></div>
+	
+			<h3>Top 14 GDP Country Overall Spending in Billions ($) 2017</h3>
+	
+	<div id = "tot_spending_div" style = "width:80%; height:500px" class="chartsG"></div>
+	
+	<div class="div"><p>The most recent available data shows US has the highest spending (17238 B) overall while being followed closely by China(11778 B).</p></div>
+	<h3> Data Overview </h3>
+	<div id = "dataTable_div"
+	     style = "width:80%; height:400px" class="chartsG"></div>
+	<div class="div"><p>This table displays an overview of all data studied and used for the the study's visualization over the course of 5 years from 2013 to 2017. </p></div>
+	<h3> Spending Per Capita in Billions ($)</h3>
+	<div id = "totSpendCapita_div"
+	     style = "width:80%; height:400px" class="chartsG"></div>
+	<div class="div"><p>This chart is ranked by the amount of spending per capita in 2017 while Australia leads the ranking as the highest spender in 2017, it also has the highest average spending from 2013 to 2017. US no longer is the top spender by capita, proving that spending behavior can be varied by population.
+</p></div>
+	<h3> Total Spending vs GDP in Billions ($) 2017</h3>
+	<div id = "total_gdp_spending_div"
+	     style = "width:80%; height:400px" class="chartsG"></div>
+	<div class="div"><p>To introduce more variables that could help explaining spending trend, we can take a closer look on how GDP could be compared to spending. In most recent year, 2017, all 14 countries have higher GDP than spending except Japan, which overspent the countries' market value of all the final goods and services produced annually.</p></div>		
+	
+</div> <!--Intro-->
+	
+
+<div class="page-section" id="2">
+			<h2>Education Spending</h2>
+	<h3>Education expenditure as share of GDP in %</h3>
+	<div id = "eduShare_div" style = "width:80%; height:400px" class="chartsG"></div>
+	
+	<h3>Education expenditure per capita as share of GDP per capita in %</h3>
+	<div id = "edupercOfGDPCap_div" style = "width:80%; height:400px" class="chartsG"></div>
+	<h3>Comparing Education per Capita with GDP per Capita</h3>
+	<table class="columns">
+      <tr>
+		  <td><div id = "perEduCapita_div" class="chartsG"></div></td>
+		  <td><div id = "perCapitaGDP_div" class="chartsG"></div></td>
+		</tr>
+	<div class="div"><p>The trend of education expenditure as share of GDP vs per capita spending is almost identical among nations. Brazil has the highest education expenditure out of its GDP while Japan and India have the lowest. This trend no longer apply to per capita education expenditure, UK becomes the highest spender per capita while India surged its spending from 2014 and onward. </p>
+	<br/>	
+	<p>The following charts reveal Australia and UK have the highestest average education expenditure per capita over the years of 2013 to 2017.</p>
+	<br/>	
+	<p>Notice we do not have enough data for China, Saudi Arabia, Russia and Canada. </p>
+	<br/></div>	
+	</table>
+
+	
+	
+</div> <!--Edu Spending -->
+	
+	
+<div class="page-section" id="3">
+			<h2>Healthcare Spending</h2>
+	<h3>Healthcare expenditure as share of GDP in %</h3>
+	<div id = "HCShare_div" style = "width:80%; height:400px" class="chartsG"></div>
+	<h3>Healthcare expenditure per capita as share of GDP per capita in %</h3>
+	<div id = "HCperCapOfGDPCap_div" style = "width:80%; height:400px" class="chartsG"></div>
+	<h3>Comparing Healthcare per Capita with GDP per Capita</h3>
+		<div class="div"><p>With more completed data, healthcare expenditure among nations are more consistent in comparing to education. The per capita is very similar to the overall healthcare expenditure in relation to GDP.</p>
+	<br/>	
+	<p>The following charts reveal Australia and US has the highestest average healthcare expenditure per capita over the years of 2013 to 2017. While GDP per capita displays a more consistent trend among countries, per capita by categories are less predictable.</p>
+	<br/>	
+
+	<br/></div>
+	<table class="columns">
+      <tr>
+		  <td><div id = "perHCCapita_div" class="chartsG"> </div></td>
+		  <td><div id = "perCapitaGDPHC_div" class="chartsG"></div></td>
+		</tr>
+	</table>
+	<br/>
+
+</div> <!--HC spending-->
+<div class="page-section" id="4" >
+<h2>Military Spending</h2>
+<h3>Military expenditure as share of GDP in %</h3>
+<div id = "MShare_div" style = "width:80%; height:400px" class="chartsG"></div>
+<h3>Military expenditure per capita as share of GDP per capita in %</h3>
+<div id = "MperCapOfGDPCap_div" style = "width:80%; height:400px" class="chartsG"></div>
+<h3>Comparing Military per Capita with GDP per Capita</h3>	
+	<div class="div"><p>With more completed data, military expenditure among nations are more consistent. The per capita is almost identical to the overall military expenditure in relation to GDP.It is not a surprise that Saudi Arabia spend the most on military out of its GDP, followed up by Russia. </p>
+	<br/>	
+	<p>Instead of looking at percentage, the following graphs display actual spending figure and reveal a slightly different trend that Russia is no longer on the top list. Its actual expenditure in amount of dollars is in fact not as much as the other nations. </p>
+	<br/>	
+
+	<br/></div>	
+<table class="columns">
+      <tr>
+		  <td><div id = "perMCapita_div" class="chartsG"></div></td>
+		  <td><div id = "perCapitaGDPM_div" class="chartsG"></div></td>
+		</tr>
+</table>
+</div> <!--Military Spending-->
+
+
+<div class="page-section" id="5">
+	<h2>Spending Comparisons</h2>
+	<div class="div"><p>The following graphs examine dollar spent by category, and by average the top 14 countries spend the most on healthcare and the least on military.</p></div>
+	<br/>
+	 <table class="columns">
+      <tr>
+        <td><div id="compareSpendM_div" class="chartsG"></div></td>
+        <td><div id="compareSpendHC_div" class="chartsG"></div></td>
+      </tr>
+	
+	
+	  <tr>
+		<td><div id="compareSpendEdu_div" class="chartsG"></div></td>  
+		<td><div id="compareHEM_div" class="chartsG"></div></td>  
+	  </tr>
+	
+
+    </table>
+	
+	
+	
+
+	<h3>Spending growth rate in percent and fixed values</h3>
+	<h4>Education</h4>
+	<div id = "EducationGrowth_div"
+		 style = "width:80%; height:400px" class="chartsG"></div>
+	<br/>
+	
+	<div id = "EducationGrowth1_div"
+		 style = "width:80%; height:400px" class="chartsG"></div>
+    <div class="div"><p>In terms of education growth, Germany and US have the highest increase in 2014 while Japan declined in the same year. From 2015 and onward there are no significant jump or decline in education expenditure.</p>
+	
+	<p>By percent of growth, fluctuation is more significant. India increased the most in 2015 in rate of growth while Brazil declined. Rates are mostly tending towards growth from 2016 and onward. </p></div>
+	<h4>Healthcare</h4>
+	<div id = "HCGrowth_div"
+		 style = "width:80%; height:400px" class="chartsG"></div>
+	<br/>
+	<div id = "HCGrowth1_div"
+		 style = "width:80%; height:400px" class="chartsG"></div>
+	  <div class="div"><p>For Healthcare, US and China experienced the highest increase in 2015 and decline in 2016 while Saudi Arabia has the most fluctuated rate of growth.
+		  </p></div>
+
+</div> <!--Growth Compare-->
+<div class="page-section" id="6">
+	<h2>Other Trends</h2>
+	  <div class="div"><p>GDP and Spending amount in dollar share almost identical distribution among nations. 
+		  </p></div>
+	<br/>
+<table class="columns">
+	      <tr>
+		  <td><div id = "extraGDP_div" class="chartsG"></div></td>
+		  <td><div id = "extraSpending_div" class="chartsG"></div></td>
+		</tr>
+	</table>
+	    <h3>Correlations</h3>
+		<div id = "bubGDPSpending_div" style = "width:80%; height:500px" class="chartsG"></div>
+		
+	    <div class="div"><p> This bubble graph above displays bubble size in terms of population size. There is a vivid direct relation between GDP and total spending, the higher the GDP the more likely it is for countries to spend. However, it is less impact by population size, while being the most populated country, China is behind US in spending and GDP.  
+		  </p></div>
+	
+	    <br/>
+		<div id = "bubPopGDPSpending_div" style = "width:80%; height:500px" class="chartsG"></div>
+		 <div class="div"><p> There is no significant correlation between population and GDP. However, the more populated nations tend to generate more GDP. The size of the bubble is determined by total spending.  
+		  </p></div>
+	    <br/>
+	    <div id = "bubHESpending_div" style = "width:80%; height:500px" class="chartsG"></div>
+	    	 <div class="div"><p> Education expenditure per capita is directly related to healthcare expenditure. It is likely for someone to be more aware of personal care or healthcare when one acquires more education. The size of the bubble is determined by GDP per capita.</p> </div>
+	    <br/>
+		<div id = "bubHMSpending_div" style = "width:80%; height:500px" class="chartsG"></div>
+			 <div class="div"><p> Healthcare expenditure per capita is not related to military expenditure while US stands out as an outlier to be the biggest spender in both categories.</p> </div>
+	    <br/>
+	    <div id = "bubEMSpending_div" style = "width:80%; height:500px" class="chartsG"></div>
+	          <div class="div"><p> Education expenditure per capita is not related to military expenditure while US stands out as an outlier to be the biggest spender in both categories.</p> </div>
+	    <br/>
+</div> <!--Other trends-->
+	<div class="page-section" id="7">
+	<h2>Reference</h2>
+		<h3>World Bank Open Data</h3>
+		<a href="https://data.worldbank.org/"  target="_blank">https://data.worldbank.org/</a>
+		<h3>Google Charts</h3>
+		<a href="https://developers.google.com/chart/interactive/docs/"  target="_blank">https://developers.google.com/chart/interactive/docs/</a>
+	<h2>Contact</h2>
+		<h3>For further inquiries please contact: </h3>
+		<a href="mailto: lydia.shia@gwu.edu">lydia.shia@gwu.edu</a>
+		
+</div><!--Reference-->
+<!--section ends-->
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+<a id="back2Top" title="Back to top" href="#1">Back to top</a>
+</body>
+
+</html>

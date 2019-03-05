@@ -1,0 +1,63 @@
+---
+title: "DataVisProj1"
+author: "Lydia Shia"
+date: "3/3/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#install.packages('rio')
+library(rio)
+library(dplyr)
+library(tidyr)
+getwd()
+```
+
+## R Markdown
+
+
+
+```{r cars}
+
+data_list <- import_list("finaldataset.xlsx", setclass = "tbl")
+#gdpname <- names(data_list$GDP)[-1]
+data_list$GDP <-gather(data_list$GDP, Year, GDP,-c(Country,Obs))
+
+data_list$Pop <-gather(data_list$Pop, Year, Population,-c(Country,Obs))
+
+data_list$GDP_cap <-gather(data_list$GDP_cap, Year, GDP_cap,-c(Country,Obs))
+
+data_list$spending <-gather(data_list$spending, Year, spending,-c(Country,Obs))
+
+data_list$spending_cap <-gather(data_list$spending_cap, Year, spending_cap,-c(Country,Obs))
+
+data_list$edu_exp <-gather(data_list$edu_exp, Year, edu_exp,-c(Country,Obs))
+
+data_list$edu_cap <-gather(data_list$edu_cap, Year, edu_cap,-c(Country,Obs))
+
+data_list$edu_gdp <-gather(data_list$edu_gdp, Year, edu_gdp,-c(Country,Obs))
+
+data_list$HC_exp <-gather(data_list$HC_exp, Year, HC_exp,-c(Country,Obs))
+
+data_list$HC_cap <-gather(data_list$HC_cap, Year, HC_cap,-c(Country,Obs))
+
+data_list$HC_gdp <-gather(data_list$HC_gdp, Year, HC_gdp,-c(Country,Obs))
+
+data_list$M_exp <-gather(data_list$M_exp, Year, M_exp,-c(Country,Obs))
+
+data_list$M_cap <-gather(data_list$M_cap, Year, M_cap,-c(Country,Obs))
+
+data_list$M_gdp <-gather(data_list$M_gdp, Year, M_gdp,-c(Country,Obs))
+
+
+library(tidyverse)
+finalData1 <- Reduce(function(x, y) merge(x, y, all=TRUE), list(data_list$GDP,data_list$Pop,data_list$GDP_cap,data_list$spending,data_list$spending_cap
+                                              ,data_list$edu_exp,data_list$edu_cap,data_list$edu_gdp,data_list$HC_exp,data_list$HC_cap,
+                                              data_list$HC_gdp,data_list$M_exp,data_list$M_cap,data_list$M_gdp))
+
+finalData1 <- finalData1[-1]
+write.csv(finalData1, file = "finalData1.csv")
+
+```
+
