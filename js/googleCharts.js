@@ -826,7 +826,7 @@
                         height: '500',
 					   isStacked: 'relative',
 				       legend: {position:'top', maxLines: 2}, 
-					   title: 'GDP Comparison Count in Billions ($)',
+					   title: 'Population Comparison Count in Millions',
 					   hAxis: {title: 'Year'},
 					   vAxis: {minValue:0},
 					  
